@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "messingabout:topaz_ore",
+    "messingabout:deepslate_topaz_ore",
+    "messingabout:topaz_block"
+  ]
+}

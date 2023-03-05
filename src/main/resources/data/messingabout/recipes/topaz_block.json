@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+    ],
+  "key": {
+    "#": {
+      "item": "messingabout:topaz"
+    }
+  },
+  "result": {
+    "item": "messingabout:topaz_block"
+  }
+
+}

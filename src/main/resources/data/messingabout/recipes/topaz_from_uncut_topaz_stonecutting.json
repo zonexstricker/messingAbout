@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "messingabout:uncut_topaz"
+  },
+  "result": "messingabout:topaz"
+}

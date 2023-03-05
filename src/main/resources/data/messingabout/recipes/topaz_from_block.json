@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "messingabout:topaz_block"
+    }
+  ],
+  "result": {
+    "item": "messingabout:topaz",
+    "count": 9
+  }
+}

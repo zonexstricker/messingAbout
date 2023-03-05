@@ -12,6 +12,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.ololololivia.messingabout.block.custom.JumpyBlock;
 import net.ololololivia.messingabout.item.ModCreativeModeTab;
 import net.ololololivia.messingabout.item.ModItems;
 import net.ololololivia.messingabout.messingAbout;
@@ -34,6 +35,10 @@ public class ModBlocks {
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.MESSING_ABOUT_TAB);
 
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            ()-> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MESSING_ABOUT_TAB);
 
 
 private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

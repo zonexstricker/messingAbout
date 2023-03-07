@@ -2,12 +2,16 @@
   "item.messingabout.topaz": "Topaz",
   "item.messingabout.uncut_topaz": "Uncut Topaz",
   "item.messingabout.eight_ball": "Magic Eight Ball",
+  "item.messingabout.radish": "Radish",
+  "item.messingabout.radish_seeds": "Radish Seeds",
+
 
   "block.messingabout.topaz_block": "Block of Topaz",
   "block.messingabout.topaz_ore": "Topaz Ore",
   "block.messingabout.deepslate_topaz_ore": "Deepslate Topaz Ore",
   "block.messingabout.jumpy_block": "Jumpy Block",
   "block.messingabout.topaz_lamp": "Topaz Lamp",
+  "block.messingabout.radish_crop": "Radish Crop",
 
   "itemGroup.messingabouttab": "Useless Tat"
 }

@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -13,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ololololivia.messingabout.block.custom.JumpyBlock;
+import net.ololololivia.messingabout.block.custom.RadishCropBlock;
 import net.ololololivia.messingabout.block.custom.TopazLamp;
 import net.ololololivia.messingabout.item.ModCreativeModeTab;
 import net.ololololivia.messingabout.item.ModItems;
@@ -36,7 +38,6 @@ public class ModBlocks {
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.MESSING_ABOUT_TAB);
 
-
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
             ()-> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MESSING_ABOUT_TAB);
@@ -45,6 +46,9 @@ public class ModBlocks {
             ()-> new TopazLamp(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(TopazLamp.LIT)? 15 : 0)), ModCreativeModeTab.MESSING_ABOUT_TAB); //the light level that this block emits should be 15 when LIT
+
+    public static final RegistryObject<Block> RADISH_CROP = BLOCKS.register("radish_crop",
+            ()-> new RadishCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
 private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

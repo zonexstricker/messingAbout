@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "messingabout:block/topaz_lamp_on" },
+    "lit=false": { "model": "messingabout:block/topaz_lamp_off" }
+  }
+}
